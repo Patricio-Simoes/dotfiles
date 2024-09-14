@@ -1,0 +1,18 @@
+# Gaps.
+
+gaps inner 10
+gaps outer 5
+default_border pixel 2
+
+### Borders, (Dracula theme).
+
+client.focused          #BD93F9 #6272A4 #F8F8F2 #BD93F9 #BD93F9
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A #44475A
+client.unfocused        #44475A #44475A #F8F8F2 #44475A #44475A
+client.urgent           #FF5555 #FF5555 #FFFFFF #FF5555 #FF5555
+client.placeholder      #EEBD35 #282828 #E7D7AD #EEBD35 #EEBD35
+client.background       #282A36
+
+bar { 
+     swaybar_command waybar
+}

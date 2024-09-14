@@ -1,0 +1,19 @@
+# Authorize polkit-gnome.
+
+exec /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+
+# Conky.
+
+exec /home/psimoes/.config/conky/start.sh
+
+# Tray icons.
+
+exec blueman-applet
+
+# Mullvad VPN.
+
+exec /opt/Mullvad\ VPN/mullvad-vpn
+
+# Filen.
+
+exec mullvad-exclude /home/psimoes/AppImages/filen_x86_64.AppImage

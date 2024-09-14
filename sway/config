@@ -1,0 +1,25 @@
+input * {
+ xkb_layout "pt"
+}
+
+# Super key.
+
+set $mod Mod4
+
+floating_modifier $mod
+
+# Terminal and Menu.
+
+set $term alacritty
+set $menu wofi --show drun
+
+# Home row direction keys.
+
+set $left j
+set $down k
+set $up i
+set $right l
+
+exec systemctl --user import-environment
+
+include $HOME/.config/sway/config.d/*

@@ -1,0 +1,12 @@
+style=/home/psimoes/.config/wofi/style.css
+
+prompt=Search...
+show=drun
+term=alacritty
+insensitive=true
+lines=9
+columns=3
+sort_order=alphabetical
+gtk_dark=true
+allow_images=true
+no_actions=true

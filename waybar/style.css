@@ -1,0 +1,51 @@
+@import "/home/psimoes/.config/waybar/colorschemes/dracula.css";
+
+* {
+  border: none;
+  font-family: "Fira Code", "Symbols Nerd Font Mono";
+}
+
+#waybar {
+  background: @background;
+}
+
+#workspaces {
+  font-size: 18px;
+}
+
+#clock,
+#pulseaudio,
+#network {
+  font-size: 14px;
+}
+
+#workspaces,
+#clock,
+#pulseaudio,
+#network,
+#tray,
+#cpu,
+#memory {
+  margin: 2px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  color: @foreground;
+}
+
+#workspaces button {
+  padding: 5px;
+  color: @inactive;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#workspaces button.visible {
+  color: @foreground;
+}
+
+#workspaces button:hover {
+  background-color: transparent;
+}
