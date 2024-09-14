@@ -1,4 +1,4 @@
-# Dotfiles for i3
+# Dotfiles
 
 Here are my personal dotfiles used on Debian.
 
