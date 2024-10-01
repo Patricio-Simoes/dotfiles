@@ -1,0 +1,6 @@
+@theme "~/.config/rofi/themes/dracula.rasi"
+
+listview {
+	lines: 10;
+	columns: 3;
+}

@@ -1,0 +1,63 @@
+# This is my i3 config master file.
+
+# I have split the config across multiple files, for easier maintenance:
+
+#   "autostart.conf" - Where all the programs that i want to start automatically on boot are called.
+#   "keybinds.conf" - This is where the keyboard shortcuts are defined.
+#   "monitors.conf" - This is where the xrandr configuration is defined and where i manage multiple outputs.
+#   "window.conf" - This is where the border and gaps are defined and also, where the floating rules for some programs are defined.
+
+# In addition, i have created a script that allows me to switch the theme of every program that i use. For example:
+# If i want to switch the current theme that rofi, conky and i3 are using, i can just press mod+ctrl+[0-9].
+# This would change, for instance, the dracula theme to gruvbox without deleting any files. So you can always switch between them.
+# This script is called "theme.sh" and is located in the "scripts/" folder.
+
+# Also, i should mention that, the base for my configs was EndeavourOs's i3 config files.
+# I have modified them heavily, but a lot of my work was made possible by those guys!
+
+# Cheers!
+
+###################
+# Patrício Simões #
+###################
+
+# i3 supports multiple files, however, variables defined in child files, cannot be used in the parent file.
+# Only the opposite is possible.
+
+# Assign the mod key.
+
+set $mod Mod4
+
+floating_modifier $mod
+
+# Default layout.
+
+workspace_layout default
+
+# Font used across configuration files.
+
+font pango: FiraCode Nerd Font medium 11.5
+
+# Workspace names.
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Configuration files, located in the "configs/" folder.
+
+include ~/.config/i3/configs/autostart.conf
+include ~/.config/i3/configs/keybinds.conf
+include ~/.config/i3/configs/monitors.conf
+include ~/.config/i3/configs/window.conf
+
+# i3 theme configuration file, located in the "themes/" folder.
+
+include ~/.config/i3/i3blocks/dracula.conf
