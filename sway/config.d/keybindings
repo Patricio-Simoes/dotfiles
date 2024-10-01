@@ -5,13 +5,13 @@ bindsym $mod+q kill
 
 # Program shortcuts.
 
-bindsym $mod+Return exec swaymsg "workspace 1; exec $term"
-bindsym $mod+b exec swaymsg "workspace 2; exec flatpak run io.github.zen_browser.zen"
+bindsym $mod+Return exec swaymsg "workspace 1; exec mullvad-exclude $term"
+bindsym $mod+b exec swaymsg "workspace 2; exec flatpak run org.mozilla.firefox"
 bindsym $mod+f exec swaymsg "workspace 3; exec thunar"
 bindsym $mod+o exec swaymsg "workspace 4; exec flatpak run md.obsidian.Obsidian"
 bindsym $mod+c exec swaymsg "workspace 5; exec codium"
 bindsym $mod+s exec swaymsg "workspace 8; exec mullvad-exclude flatpak run com.valvesoftware.Steam"
-bindsym $mod+v exec swaymsg "workspace 9; exec virt-manager"
+bindsym $mod+v exec swaymsg "workspace 9; exec mullvad-exclude virt-manager"
 
 # Toggle floating.
 

@@ -80,3 +80,6 @@ fi
 neofetch
 
 eval "$(starship init bash)"
+
+DISTROBOX_BACKEND=docker
+MOZ_ENABLE_WAYLAND=1
