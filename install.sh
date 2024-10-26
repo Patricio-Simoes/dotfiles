@@ -106,7 +106,6 @@ rm -rf "$HOME/.config/MangoHud"
 rm -rf "$HOME/.config/neofetch"
 rm "$HOME/.config/starship.toml"
 
-
 ln -s "$DOTFILES/MangoHud/" "$HOME/.config/MangoHud"
 ln -s "$DOTFILES/neofetch/" "$HOME/.config/neofetch"
 ln -s "$DOTFILES/starship.toml" "$HOME/.config/"
