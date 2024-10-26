@@ -21,6 +21,10 @@ bindsym $mod+Shift+Space floating toggle
 
 bindsym $mod+Shift+f fullscreen
 
+# Screen lock.
+
+bindsym $mod+l exec swaylock -C ~/.config/swaylock/config
+
 # Sway environment.
 
 bindsym $mod+Shift+r reload; exec notify-send 'sway' 'Restarted'

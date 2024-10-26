@@ -4,8 +4,8 @@
   "margin-left": 15,
   "margin-right": 15,
     "modules-left": ["sway/workspaces"],
-    "modules-center": [""],
-    "modules-right": ["memory", "custom/separator", "cpu", "custom/separator", "pulseaudio", "custom/separator", "clock", "custom/separator", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": ["memory", "custom/separator", "cpu", "custom/separator", "pulseaudio", "custom/separator", "tray"],
     "cpu": {
         "interval": 2,
         "format": "  {}%",

@@ -1,0 +1,7 @@
+image=~/.config/backgrounds/dracula-ship.png
+scaling=fill
+font=Fira Code
+font-size=25
+indicator-radius=100
+indicator-caps-lock=true
+show-keyboard-layout=true
