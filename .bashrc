@@ -66,10 +66,13 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 alias up='sudo apt update && apt list --upgradable'
-alias upg='sudo apt upgrade'
+alias upg='sudo apt upgrade -y'
 
-alias fup='flatpak update'
-alias flist='flatpak list'
+alias py='python3'
+
+alias tree='swaymsg -t get_tree'
+
+alias filen='mullvad-exclude /home/psimoes/AppImages/filen_x86_64.AppImage'
 
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"

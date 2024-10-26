@@ -1,11 +1,18 @@
 # Rules.
 
-for_window [app_id="pavucontrol"] floating enable, resize set 775 400
-for_window [app_id="galculator"] floating enable, resize set 375 475
-for_window [app_id="mpv"] floating enable, resize set 1280 720
-for_window [class="vlc"] floating enable, resize set 1800 900
-for_window [app_id="qimgv"] floating enable, resize set 1280 720
 for_window [app_id="blueman-manager"] floating enable, resize set 720 540
+for_window [app_id="galculator"] floating enable, resize set 375 475
+for_window [app_id="geany"] floating enable, resize set 1450 820
+for_window [app_id="mkvtoolnix"] floating enable, resize set 1280 720
+for_window [app_id="mpv"] floating enable, resize set 1650 850
+for_window [app_id="pavucontrol"] floating enable, resize set 775 400
+for_window [app_id="qimgv"] floating enable, resize set 1280 720
+
 for_window [title="Progresso da operação do ficheiro"] floating enable, resize set 720 540
-for_window [title="Friends List"] floating enable, resize set 320 580
-for_window [title="Cryptomator"] floating enable, resize set 685 550
+for_window [title="Python Turtle Graphics"] floating enable
+for_window [title="Cryptomator"] resize set 720 540
+
+for_window [class="bitwarden"] floating enable
+for_window [class="cryptomator"] floating enable
+for_window [class="steam"] floating enable
+for_window [class="vlc"] floating enable, resize set 1650 850
