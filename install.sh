@@ -109,3 +109,9 @@ rm "$HOME/.config/starship.toml"
 ln -s "$DOTFILES/MangoHud/" "$HOME/.config/MangoHud"
 ln -s "$DOTFILES/neofetch/" "$HOME/.config/neofetch"
 ln -s "$DOTFILES/starship.toml" "$HOME/.config/"
+
+# Themes.
+
+mkdir $HOME/.themes
+cd $HOME/.themes
+git clone https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme

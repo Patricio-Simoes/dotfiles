@@ -1,4 +1,4 @@
-@import "/home/psimoes/.config/waybar/colorschemes/dracula.css";
+@import "./colorschemes/everforest.css";
 
 * {
   border: none;
@@ -10,7 +10,7 @@
 }
 
 #workspaces {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #clock,
@@ -27,13 +27,14 @@
 #cpu,
 #memory {
   margin: 2px;
-  padding: 0 10px;
+  padding: 0 5px;
   border-radius: 10px;
   background-color: transparent;
   color: @foreground;
 }
 
-#workspaces button {
+#workspaces button,
+#custom-separator {
   padding: 5px;
   color: @inactive;
   border: none;

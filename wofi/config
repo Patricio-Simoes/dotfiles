@@ -1,4 +1,4 @@
-style=/home/psimoes/.config/wofi/style.css
+style=.config/wofi/style.css
 
 prompt=Search...
 show=drun

@@ -8,6 +8,11 @@ set $mod Mod4
 
 floating_modifier $mod
 
+# Theme change script.
+
+bindsym Ctrl+0 exec $HOME/Documentos/bookworm-scripts/scripts/others/change_theme.sh 0
+bindsym Ctrl+1 exec $HOME/Documentos/bookworm-scripts/scripts/others/change_theme.sh 1
+
 # Terminal and Menu.
 
 set $term alacritty
@@ -22,4 +27,5 @@ set $right l
 
 exec systemctl --user import-environment
 
-include $HOME/.config/sway/config.d/*
+include ~/.config/sway/config.d/*
+include ~/.config/sway/themes/everforest

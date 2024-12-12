@@ -5,13 +5,15 @@ bindsym $mod+q kill
 
 # Program shortcuts.
 
-bindsym $mod+Return exec swaymsg "workspace 1; exec mullvad-exclude $term"
-bindsym $mod+b exec swaymsg "workspace 2; exec flatpak run org.mozilla.firefox"
-bindsym $mod+f exec swaymsg "workspace 3; exec thunar"
-bindsym $mod+o exec swaymsg "workspace 4; exec flatpak run md.obsidian.Obsidian"
-bindsym $mod+c exec swaymsg "workspace 5; exec codium"
-bindsym $mod+s exec swaymsg "workspace 8; exec mullvad-exclude flatpak run com.valvesoftware.Steam"
-bindsym $mod+v exec swaymsg "workspace 9; exec mullvad-exclude virt-manager"
+bindsym $mod+Return exec swaymsg "exec $term"
+bindsym $mod+b exec swaymsg "workspace 2; move workspace to output HDMI-A-1; exec flatpak run org.mozilla.firefox"
+bindsym $mod+f exec swaymsg "workspace 3; move workspace to output DP-3; exec thunar"
+bindsym $mod+n exec swaymsg "workspace 5; move workspace to output HDMI-A-1; exec joplin"
+bindsym $mod+y exec swaymsg "workspace 7; move workspace to output HDMI-A-1; exec flatpak run io.freetubeapp.FreeTube"
+bindsym $mod+j exec swaymsg "workspace 7; move workspace to output HDMI-A-1; exec flatpak run com.github.iwalton3.jellyfin-media-player"
+bindsym $mod+s exec swaymsg "workspace 8; move workspace to output DP-3; exec flatpak run com.valvesoftware.Steam"
+bindsym $mod+v exec swaymsg "workspace 9; move workspace to output DP-3; exec virt-manager"
+bindsym $mod+m exec swaymsg "workspace 10; move workspace to output HDMI-A-1; exec flatpak run org.mozilla.Thunderbird"
 
 # Toggle floating.
 
@@ -60,32 +62,3 @@ bindsym $mod+Shift+v split v, layout default
 #
 
 bindsym Print exec sh -c 'grim -g "$(slurp)" ~/Imagens/Screenshots/$(date +"%Y-%m-%d_%H-%M-%S").png && notify-send "Grim" "Selected image saved to ~/Imagens/Screenshots"'
-
-#
-# Workspaces:
-#
-    # Switch to workspace.
-
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
-
-    # Move focused container to workspace.
-
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10

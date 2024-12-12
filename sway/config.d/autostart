@@ -1,19 +1,19 @@
 # Authorize polkit-gnome.
 
-exec --no-startup-id lxpolkit
+exec --no-startup-id polkit-gnome-authentication-agent-1
 
 # Conky.
 
-exec --no-startup-id /home/psimoes/.config/conky/start.sh
+exec --no-startup-id ~/.config/conky/start.sh
 
 # Tray icons.
 
 exec --no-startup-id blueman-applet
 
-# Mullvad VPN.
+# VPN.
 
-exec /opt/Mullvad\ VPN/mullvad-vpn
+exec protonvpn-app
 
 # Filen.
 
-# exec mullvad-exclude /home/psimoes/AppImages/filen_x86_64.AppImage
+exec ~/Documentos/AppImages/filen_x86_64.AppImage

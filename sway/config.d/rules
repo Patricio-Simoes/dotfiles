@@ -1,6 +1,8 @@
 # Rules.
 
+for_window [app_id="Alacritty"] floating enable
 for_window [app_id="blueman-manager"] floating enable, resize set 720 540
+for_window [app_id="calibre-ebook-viewer"] floating enable
 for_window [app_id="galculator"] floating enable, resize set 375 475
 for_window [app_id="geany"] floating enable, resize set 1450 820
 for_window [app_id="mkvtoolnix"] floating enable, resize set 1280 720

@@ -1,0 +1,8 @@
+# Borders, (Everforest theme).
+
+## Target                 		 Title     	Background    	  Text   	Indicator  		 Border
+client.focused          		#A7C080 	  #232A2E 	 	 #A7C080 	 #A7C080		 #A7C080
+client.focused_inactive 		#A7C080 	  #232A2E 		 #A7C080 	 #7A8478 		 #7A8478
+client.unfocused        		#A7C080		  #232A2E 		 #A7C080 	 #859289 		 #859289
+client.urgent           		#E67E80		  #E67E80 		 #E67E80 	 #E67E80 		 #E67E80
+client.placeholder      		#A7C080		  #232A2E 	 	 #A7C080 	 #EEBD35 	 	 #EEBD35
