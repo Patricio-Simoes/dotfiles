@@ -9,7 +9,9 @@ echo -n "Overwrite .bashrc file? [Y/N]: "
 read -r input
 
 if [ "$input" = "Y" ] || [ "$input" = "y" ]; then
-	rm "$HOME/.bashrc"
+	if [ -e "$HOME/.bashrc" ]; then
+		rm "$HOME/.bashrc"
+	fi
 	ln -s "$DOTFILES/.bashrc" "$HOME/"
 fi
 
@@ -29,9 +31,6 @@ if [ "$input" = "0" ]; then
 	mkdir "$HOME/.config/gtk-2.0"
 	mkdir "$HOME/.config/gtk-3.0"
 	mkdir "$HOME/.config/xfce4"
-
-	ln -s "$DOTFILES/.themes/" "$HOME/.themes"
-	ln -s "$DOTFILES/.icons/" "$HOME/.icons"
 
 	ln -s "$DOTFILES/alacritty/" "$HOME/.config/alacritty"
 	ln -s "$DOTFILES/backgrounds/" "$HOME/.config/backgrounds"
@@ -58,9 +57,6 @@ elif [ "$input" = "2" ]; then
 	mkdir "$HOME/.config/gtk-3.0"
 	mkdir "$HOME/.config/xfce4"
 
-	ln -s "$DOTFILES/.themes/" "$HOME/.themes"
-	ln -s "$DOTFILES/.icons/" "$HOME/.icons"
-
 	ln -s "$DOTFILES/alacritty/" "$HOME/.config/alacritty"
 	ln -s "$DOTFILES/backgrounds/" "$HOME/.config/backgrounds"
 	ln -s "$DOTFILES/conky/" "$HOME/.config/conky"
@@ -81,9 +77,6 @@ elif [ "$input" = "4" ]; then
 	mkdir "$HOME/.config/gtk-3.0"
 	mkdir "$HOME/.config/xfce4"
 
-	ln -s "$DOTFILES/.themes/" "$HOME/.themes"
-	ln -s "$DOTFILES/.icons/" "$HOME/.icons"
-
 	ln -s "$DOTFILES/alacritty/" "$HOME/.config/alacritty"
 	ln -s "$DOTFILES/backgrounds/" "$HOME/.config/backgrounds"
 	ln -s "$DOTFILES/conky/" "$HOME/.config/conky"
@@ -101,36 +94,53 @@ fi
 
 # Joplin
 
-rm -rf "$HOME/.config/joplin-desktop/userchrome.css"
-rm -rf "$HOME/.config/joplin-desktop/userstyle.css"
+if [ -e "$HOME/.config/joplin-desktop/userchrome.css" ]: then
+	rm -rf "$HOME/.config/joplin-desktop/userchrome.css"
+fi
+if [ -e "$HOME/.config/joplin-desktop/userstyle.css" ]: then
+	rm -rf "$HOME/.config/joplin-desktop/userstyle.css"
+fi
 
 ln -s "$DOTFILES/joplin/userchrome.css" "$HOME/.config/joplin-desktop"
 ln -s "$DOTFILES/joplin/userstyle.css" "$HOME/.config/joplin-desktop"
 
 # MangoHud
 
-rm -rf "$HOME/.config/MangoHud"
+if [ -e "$HOME/.config/MangoHud" ]; then
+	rm -rf "$HOME/.config/MangoHud"
+fi
 
 ln -s "$DOTFILES/MangoHud/" "$HOME/.config/MangoHud"
 
 # Neofetch
 
-rm -rf "$HOME/.config/neofetch"
+if [ -e "$HOME/.config/neofetch" ];then
+	rm -rf "$HOME/.config/neofetch"
+fi
 
 ln -s "$DOTFILES/neofetch/" "$HOME/.config/neofetch"
 
 # Startship
 
-rm "$HOME/.config/starship.toml"
+if [ -e "$HOME/.config/starship.toml" ]; then
+	rm "$HOME/.config/starship.toml"
+fi
 
 ln -s "$DOTFILES/starship.toml" "$HOME/.config/"
 
 # Themes & Icons
+
+if [ -e "$HOME/.themes" ]: then
+	rm -rf $HOME/.themes
+fi
+if [ -e "$HOME/.icons" ]: then
+	rm -rf $HOME/.icons
+fi«
 
 mkdir $HOME/.themes
 mkdir $HOME/.icons
 
 # This is a copy because of flatpaks trying to create symlinks to these locations.
 
-cp "$DOTFILES/.themes/" "$HOME/.themes"
-cp "$DOTFILES/.icons/" "$HOME/.icons"
+cp -r "$DOTFILES/.themes/" "$HOME/.themes"
+cp -r "$DOTFILES/.icons/" "$HOME/.icons"
