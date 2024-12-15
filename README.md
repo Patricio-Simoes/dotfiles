@@ -6,7 +6,16 @@ Here are my personal dotfiles used on Debian.
 
 This is what my dotfiles will look like:
 
-![Preview](./assets/preview.png)
+![Preview](./assets/preview_01.png)
+
+![Preview](./assets/preview_02.png)
+
+I have also created a script that easily changes the theme across applications.
+By pressing Ctr+0, Ctr+1, etc, the theme changes without much effort:
+
+![Preview](./assets/preview_03.png)
+
+![Preview](./assets/preview_04.png)
 
 ## Install
 
@@ -16,7 +25,6 @@ First, clone this repository:
 git clone https://gitlab.com/patricio-simoes/dotfiles.git
 ```
 
-Then, in order to install, make sure that the "DOTFILES" variable on the install script points to the directory where you cloned this repo.
 After that, just run the install script:
 
 ```
