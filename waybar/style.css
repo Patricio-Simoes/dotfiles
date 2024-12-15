@@ -1,4 +1,4 @@
-@import "./colorschemes/everforest.css";
+@import "./colorschemes/gruvbox.css";
 
 * {
   border: none;
@@ -15,8 +15,12 @@
 
 #clock,
 #pulseaudio,
-#network {
+#network{
   font-size: 14px;
+}
+
+#window{
+  font-size: 13px;
 }
 
 #workspaces,
@@ -25,7 +29,8 @@
 #network,
 #tray,
 #cpu,
-#memory {
+#memory,
+#window {
   margin: 2px;
   padding: 0 5px;
   border-radius: 10px;

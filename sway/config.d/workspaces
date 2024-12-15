@@ -23,3 +23,40 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
+
+# Program shortcuts.
+
+# Workspace 1 - Coding stuff
+
+bindsym $mod+c exec swaymsg "workspace 1; move workspace to output HDMI-A-1; exec codium"
+
+# Workspace 2 - Browser
+
+bindsym $mod+b exec swaymsg "workspace 2; move workspace to output HDMI-A-1; exec flatpak run org.mozilla.firefox"
+
+# Workspace 3 - File manager
+
+bindsym $mod+f exec swaymsg "workspace 3; move workspace to output DP-3; exec thunar"
+
+# Workspace 4 - eBooks & Reading stuff
+
+# Workspace 5 - Note taking
+
+bindsym $mod+n exec swaymsg "workspace 5; move workspace to output DP-3; exec flatpak run md.obsidian.Obsidian"
+
+# Workspace 7 - Multimedia
+
+bindsym $mod+y exec swaymsg "workspace 7; move workspace to output HDMI-A-1; exec flatpak run io.freetubeapp.FreeTube"
+bindsym $mod+j exec swaymsg "workspace 7; move workspace to output HDMI-A-1; exec flatpak run com.github.iwalton3.jellyfin-media-player"
+
+# Workspace 8 - Gaming
+
+bindsym $mod+s exec swaymsg "workspace 8; move workspace to output DP-3; exec flatpak run com.valvesoftware.Steam"
+
+# Workspace 9 - VMs
+
+bindsym $mod+v exec swaymsg "workspace 9; move workspace to output DP-3; exec virt-manager"
+
+# Workspace 10 - E-mail
+
+bindsym $mod+m exec swaymsg "workspace 10; move workspace to output HDMI-A-1; exec flatpak run org.mozilla.Thunderbird"

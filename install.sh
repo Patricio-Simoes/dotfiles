@@ -46,13 +46,11 @@ if [ "$input" = "0" ]; then
 	ln -s "$DOTFILES/sway/" "$HOME/.config/sway"
 	ln -s "$DOTFILES/waybar/" "$HOME/.config/waybar"
 	ln -s "$DOTFILES/xfce4/helpers.rc" "$HOME/.config/xfce4/"
-fi
 
-if [ "$input" = "1" ] || [ "$input" = "3" ]; then
+elif [ "$input" = "1" ] || [ "$input" = "3" ]; then
 	:
-fi
 
-if [ "$input" = "2" ]; then
+elif [ "$input" = "2" ]; then
 	# i3 suite.
 	
 	mkdir "$HOME/.config/geany"
@@ -74,9 +72,8 @@ if [ "$input" = "2" ]; then
 	ln -s "$DOTFILES/rofi/" "$HOME/.config/rofi"
 	ln -s "$DOTFILES/scripts/" "$HOME/.config/scripts"
 	ln -s "$DOTFILES/xfce4/helpers.rc" "$HOME/.config/xfce4/"
-fi
 
-if [ "$input" = "4" ]; then
+elif [ "$input" = "4" ]; then
 	# Sway suite.
 	
 	mkdir "$HOME/.config/geany"
@@ -102,16 +99,38 @@ fi
 
 # Always installed.
 
+# Joplin
+
+rm -rf "$HOME/.config/joplin-desktop/userchrome.css"
+rm -rf "$HOME/.config/joplin-desktop/userstyle.css"
+
+ln -s "$DOTFILES/joplin/userchrome.css" "$HOME/.config/joplin-desktop"
+ln -s "$DOTFILES/joplin/userstyle.css" "$HOME/.config/joplin-desktop"
+
+# MangoHud
+
 rm -rf "$HOME/.config/MangoHud"
-rm -rf "$HOME/.config/neofetch"
-rm "$HOME/.config/starship.toml"
 
 ln -s "$DOTFILES/MangoHud/" "$HOME/.config/MangoHud"
+
+# Neofetch
+
+rm -rf "$HOME/.config/neofetch"
+
 ln -s "$DOTFILES/neofetch/" "$HOME/.config/neofetch"
+
+# Startship
+
+rm "$HOME/.config/starship.toml"
+
 ln -s "$DOTFILES/starship.toml" "$HOME/.config/"
 
-# Themes.
+# Themes & Icons
 
 mkdir $HOME/.themes
-cd $HOME/.themes
-git clone https://github.com/Fausto-Korpsvart/Everforest-GTK-Theme
+mkdir $HOME/.icons
+
+# This is a copy because of flatpaks trying to create symlinks to these locations.
+
+cp "$DOTFILES/.themes/" "$HOME/.themes"
+cp "$DOTFILES/.icons/" "$HOME/.icons"

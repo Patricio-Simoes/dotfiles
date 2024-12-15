@@ -1,0 +1,9 @@
+/* For styling the rendered Markdown */
+
+body {
+	font-family: "Comic Neue";
+}
+
+table{
+	margin: 0 auto;
+}

@@ -1,0 +1,8 @@
+# Borders, (Gruvbox theme).
+
+## Target                 		 Title     	Background    	  Text   	Indicator  		 Border
+client.focused          		#D79921 	  #3C3836 	 	 #D79921 	 #D79921		 #D79921
+client.focused_inactive 		#FBF1C7 	  #665C54 		 #A89984 	 #665C54 		 #665C54
+client.unfocused        		#FBF1C7		  #665C54 		 #A89984 	 #665C54 		 #665C54
+client.urgent           		#FB4934		  #3C3836 		 #FB4934 	 #FB4934 		 #FB4934
+client.placeholder      		#A89984		  #32302F 	 	 #A89984 	 #282828 	 	 #282828

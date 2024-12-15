@@ -4,5 +4,5 @@ output HDMI-A-1 pos 1920 0 res 1920x1080@119.982Hz
 output DP-3 pos 0 0 res 1920x1080@120Hz
 
 # Wallpaper.
-set $wallpaper ~/Imagens/Backgrounds/leafs.jpg
+set $wallpaper ~/Imagens/Backgrounds/samurai.jpg
 output * background $wallpaper fill

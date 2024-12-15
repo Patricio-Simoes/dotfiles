@@ -8,6 +8,7 @@ for_window [app_id="geany"] floating enable, resize set 1450 820
 for_window [app_id="mkvtoolnix"] floating enable, resize set 1280 720
 for_window [app_id="mpv"] floating enable, resize set 1650 850
 for_window [app_id="pavucontrol"] floating enable, resize set 775 400
+for_window [app_id="org.qbittorrent.qBittorrent"] floating enable, resize set 1520 880
 for_window [app_id="qimgv"] floating enable, resize set 1280 720
 
 for_window [title="Progresso da operação do ficheiro"] floating enable, resize set 720 540

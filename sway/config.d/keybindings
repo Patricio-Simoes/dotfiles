@@ -6,14 +6,6 @@ bindsym $mod+q kill
 # Program shortcuts.
 
 bindsym $mod+Return exec swaymsg "exec $term"
-bindsym $mod+b exec swaymsg "workspace 2; move workspace to output HDMI-A-1; exec flatpak run org.mozilla.firefox"
-bindsym $mod+f exec swaymsg "workspace 3; move workspace to output DP-3; exec thunar"
-bindsym $mod+n exec swaymsg "workspace 5; move workspace to output HDMI-A-1; exec joplin"
-bindsym $mod+y exec swaymsg "workspace 7; move workspace to output HDMI-A-1; exec flatpak run io.freetubeapp.FreeTube"
-bindsym $mod+j exec swaymsg "workspace 7; move workspace to output HDMI-A-1; exec flatpak run com.github.iwalton3.jellyfin-media-player"
-bindsym $mod+s exec swaymsg "workspace 8; move workspace to output DP-3; exec flatpak run com.valvesoftware.Steam"
-bindsym $mod+v exec swaymsg "workspace 9; move workspace to output DP-3; exec virt-manager"
-bindsym $mod+m exec swaymsg "workspace 10; move workspace to output HDMI-A-1; exec flatpak run org.mozilla.Thunderbird"
 
 # Toggle floating.
 
@@ -31,7 +23,7 @@ bindsym $mod+l exec swaylock -C ~/.config/swaylock/config
 
 bindsym $mod+Shift+r reload; exec notify-send 'sway' 'Restarted'
 bindsym $mod+Shift+e exit
-bindsym $mod+Shift+p reload; exec systemctl poweroff
+bindsym $mod+Shift+p exec systemctl poweroff
 
 # Move focus.
 
