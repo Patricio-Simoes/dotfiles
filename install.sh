@@ -94,10 +94,10 @@ fi
 
 # Joplin
 
-if [ -e "$HOME/.config/joplin-desktop/userchrome.css" ]: then
+if [ -e "$HOME/.config/joplin-desktop/userchrome.css" ]; then
 	rm -rf "$HOME/.config/joplin-desktop/userchrome.css"
 fi
-if [ -e "$HOME/.config/joplin-desktop/userstyle.css" ]: then
+if [ -e "$HOME/.config/joplin-desktop/userstyle.css" ]; then
 	rm -rf "$HOME/.config/joplin-desktop/userstyle.css"
 fi
 
@@ -120,7 +120,7 @@ fi
 
 ln -s "$DOTFILES/neofetch/" "$HOME/.config/neofetch"
 
-# Startship
+# Starship
 
 if [ -e "$HOME/.config/starship.toml" ]; then
 	rm "$HOME/.config/starship.toml"
@@ -130,10 +130,10 @@ ln -s "$DOTFILES/starship.toml" "$HOME/.config/"
 
 # Themes & Icons
 
-if [ -e "$HOME/.themes" ]: then
+if [ -e "$HOME/.themes" ]; then
 	rm -rf $HOME/.themes
 fi
-if [ -e "$HOME/.icons" ]: then
+if [ -e "$HOME/.icons" ]; then
 	rm -rf $HOME/.icons
 fi«
 
