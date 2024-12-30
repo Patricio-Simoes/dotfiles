@@ -20,6 +20,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export LANG=pt_PT.UTF-8
+export LC_CTYPE=pt_PT.UTF-8
+export LC_MESSAGES=pt_PT.UTF-8
+export LC_ALL=pt_PT.UTF-8
+
 # ARCHIVE EXTRACTION.
 
 # Usage: ex <file>.
@@ -83,6 +88,8 @@ fi
 neofetch
 
 eval "$(starship init bash)"
+
+# These are sourced from .bashrc in .profile.
 
 DISTROBOX_BACKEND=docker
 MOZ_ENABLE_WAYLAND=1

@@ -29,4 +29,4 @@ set $right l
 exec systemctl --user import-environment
 
 include ~/.config/sway/config.d/*
-include ~/.config/sway/themes/gruvbox
+include ~/.config/sway/themes/dracula

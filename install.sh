@@ -86,6 +86,8 @@ elif [ "$input" = "4" ]; then
 	ln -s "$DOTFILES/gtk-3.0/settings.ini" "$HOME/.config/gtk-3.0"
 	ln -s "$DOTFILES/scripts/" "$HOME/.config/scripts"
 	ln -s "$DOTFILES/sway/" "$HOME/.config/sway"
+	ln -s "$DOTFILES/swayidle/" "$HOME/.config/swayidle"
+	ln -s "$DOTFILES/swaylock/" "$HOME/.config/swaylock"
 	ln -s "$DOTFILES/waybar/" "$HOME/.config/waybar"
 	ln -s "$DOTFILES/xfce4/helpers.rc" "$HOME/.config/xfce4/"
 fi

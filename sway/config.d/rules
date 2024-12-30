@@ -1,21 +1,54 @@
 # Rules.
 
+# Prevents swayidle from executing while an app is in fullscreen mode.
+
+for_window [app_id=".*"] inhibit_idle fullscreen
+for_window [class=".*"] inhibit_idle fullscreen
+
+# Disables floating for specific apps.
+
 for_window [app_id="Alacritty"] floating enable
+for_window [app_id="geany"] floating enable
+for_window [app_id="ristretto"] floating enable
+
+for_window [class="Gimp*"] floating enable
+
+	# Code / PyCharm.
+	
+	for_window [title="splash"] floating enable
+	for_window [title="Add Python Interpreter"] floating enable
+	for_window [title="Confirm Exit"] floating enable
+	for_window [title="Delete"] floating enable
+	for_window [title="Edit Configuration"] floating enable
+	for_window [title="Python Interpreters"] floating enable
+	for_window [title="Select virtualenv location"] floating enable
+	for_window [title="Run/Debug Configurations"] floating enable
+	for_window [title="Select virtualenv location"] floating enable
+	
+	for_window [class="Tk"] floating enable
+	
+	# Steam.
+	
+	for_window [class="steam" title="Friends List"] floating enable, resize set 340 720
+	for_window [class="steam" title="Sign in to Steam"] floating enable
+	for_window [class="steam" title="Steam"] floating enable
+	for_window [class="steam" title="Steam Dialog"] floating enable
+	for_window [class="steam" title="Steam Settings"] floating enable
+	
+	# Thunar.
+
+	for_window [title="Criar nova pasta"] floating enable
+	for_window [title="Renomear*"] floating enable
+
+###
+
 for_window [app_id="blueman-manager"] floating enable, resize set 720 540
-for_window [app_id="calibre-ebook-viewer"] floating enable
 for_window [app_id="galculator"] floating enable, resize set 375 475
-for_window [app_id="geany"] floating enable, resize set 1450 820
 for_window [app_id="mkvtoolnix"] floating enable, resize set 1280 720
 for_window [app_id="mpv"] floating enable, resize set 1650 850
 for_window [app_id="pavucontrol"] floating enable, resize set 775 400
-for_window [app_id="org.qbittorrent.qBittorrent"] floating enable, resize set 1520 880
-for_window [app_id="qimgv"] floating enable, resize set 1280 720
+for_window [app_id="qimgv"] floating enable, floating enable, resize set 1280 720
 
-for_window [title="Progresso da operação do ficheiro"] floating enable, resize set 720 540
-for_window [title="Python Turtle Graphics"] floating enable
-for_window [title="Cryptomator"] resize set 720 540
+for_window [title="Cryptomator"] floating enable
 
-for_window [class="bitwarden"] floating enable
-for_window [class="cryptomator"] floating enable
-for_window [class="steam"] floating enable
 for_window [class="vlc"] floating enable, resize set 1650 850

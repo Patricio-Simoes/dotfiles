@@ -1,8 +1,9 @@
 # Set monitor refresh rate.
 
-output HDMI-A-1 pos 1920 0 res 1920x1080@119.982Hz
-output DP-3 pos 0 0 res 1920x1080@120Hz
+output HDMI-A-1 pos 0 420 res 1920x1080@120.001Hz
+output DP-3 pos 1920 0 res 1920x1080@60.010Hz transform 270
 
 # Wallpaper.
-set $wallpaper ~/Imagens/Backgrounds/samurai.jpg
+
+set $wallpaper ~/Imagens/Backgrounds/dracula-ship.png
 output * background $wallpaper fill
