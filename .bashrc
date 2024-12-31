@@ -1,3 +1,8 @@
+export DISTROBOX_BACKEND=docker
+export MOZ_ENABLE_WAYLAND=1
+export HISTSIZE=100
+export HISTFILESIZE=200 
+
 # If not running interactively, don't do anything.
 
 case $- in

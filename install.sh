@@ -46,7 +46,20 @@ if [ "$input" = "0" ]; then
 	ln -s "$DOTFILES/waybar/" "$HOME/.config/waybar"
 	ln -s "$DOTFILES/xfce4/helpers.rc" "$HOME/.config/xfce4/"
 
-elif [ "$input" = "1" ] || [ "$input" = "3" ]; then
+if [ "$input" = "1" ]; then
+	ln -s "$DOTFILES/nautilus/scripts" "$HOME/.local/share/nautilus"
+	# Gedit themes.
+	echo -n "Install mig's Gedit themes? [Y/N]:"
+	read -r input
+	if [ "$input" = "y" ] || [ "$input" = "Y" ]; then
+		git clone https://github.com/mig/gedit-themes
+		mkdir -p $HOME/.local/share/gedit/styles
+		cp ./gedit-themes/*.xml $HOME/.local/share/gedit/styles
+		rm -rf gedit-themes
+	fi
+fi
+
+if [ "$input" = "3" ]; then
 	:
 
 elif [ "$input" = "2" ]; then
